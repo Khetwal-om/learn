@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 import Flashcard from '../Flashcard/Flashcard'
 
 
@@ -21,7 +21,9 @@ class Tutorial extends Component {
   }
   render() {
     const { title, tutorials ,imageTwo} = this.props
+    console.log(this.props)
     console.log(this.state.selectedTutorial)
+    
     return (
         <div className="container">
            <div class="tutor">
@@ -51,11 +53,12 @@ class Tutorial extends Component {
             ))}
             </div>
        </div>
-        
+
        <div class="lecture__container">
         <div class="l-heading uppercase margin-top-bottom-small">Lecture</div>
         <div class="leture">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/1jDoMFD3oGs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+       {this.state.selectedTutorial && ( <iframe width="100%" height="315" src={`https://www.youtube.com/embed/${this.state.selectedTutorial.video}`} title={title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)}
         </div>
        </div>
       <div class="flashcards__container">
