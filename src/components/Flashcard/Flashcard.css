@@ -1,0 +1,21 @@
+.flashcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
+    grid-gap: 2rem;
+  
+  }
+  .flashcard{
+    border-radius: 4px;
+    background: #19202A;
+    height: 32vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .flashcard__question,.flashcard__answer{
+    color: #6E8098;
+  }
