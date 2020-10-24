@@ -8,7 +8,7 @@ function Instructor({ name, imageOne, tutorialNumbers }) {
       <NavLink to={`/${name}/`}> 
       <article class="instructor">
         <img class="instructor__image" src={imageOne} alt=""/>
-        <div class="instructor__information">
+        <div class="instructor__information margin-top-bottom-small">
          <h2 class="instructor__name uppercase">{name}</h2>
          <span role="img" aria-label="">🎀</span>
        </div>

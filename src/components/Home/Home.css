@@ -1,10 +1,7 @@
 .home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    min-height: 90vh;
+    background: url('../../img/backgroundImage.jpg');
+    background-position: center;
+    background-size: cover;
 }
-.home__picture img{
-    width: 400px;
-    height: 40vh;
-}
+

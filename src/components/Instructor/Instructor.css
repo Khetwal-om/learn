@@ -3,10 +3,10 @@
     border-radius: 5px;
     background: #19202A;  
     overflow: hidden;
-  }
+}
   
   .instructor  img {
-    height: 40vh;
+    /* height: 20vh; */
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 5px;

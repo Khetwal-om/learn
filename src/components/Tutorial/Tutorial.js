@@ -27,9 +27,9 @@ class Tutorial extends Component {
     return (
         <>
            <div className="l-heading uppercase margin-top-bottom-small">Know your teacher  <span role="img" aria-label="">🚀</span></div>
-            <article class="tutor">
+            <div class="tutor">
               <img className="tutor__image" src={imageTwo} alt=""/>
-            </article>
+            </div>
 
 
          <div class="tags">
