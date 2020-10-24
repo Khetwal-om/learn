@@ -1,11 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Instructor.css'
 
 function Instructor({ name, imageOne, tutorialNumbers }) {
   return (
     <>
-      <NavLink to={`/${name}/`}> 
+      <Link to={`/${name}`} > 
       <article class="instructor">
         <img class="instructor__image" src={imageOne} alt=""/>
         <div class="instructor__information margin-top-bottom-small">
@@ -13,7 +13,7 @@ function Instructor({ name, imageOne, tutorialNumbers }) {
          <span role="img" aria-label="">🎀</span>
        </div>
       </article>
-      </NavLink>
+      </Link>
     </>
   )
 }
