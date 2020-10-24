@@ -2,14 +2,14 @@ import React from 'react'
 
 import './Flashcard.css'
 
-function Flashcard({ question, answerOne }) {
+function Flashcard({ question, meaningOne }) {
   return (
     <article class="flashcard">
         <div class="flashcard__question s-heading">
         {question}
         </div>
         <div class="flashcard__answer s-heading">
-        {answerOne}
+        {meaningOne}
         </div>
     </article>      
   )

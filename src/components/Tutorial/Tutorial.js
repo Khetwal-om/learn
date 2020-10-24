@@ -25,18 +25,11 @@ class Tutorial extends Component {
     console.log(this.state.selectedTutorial)
     
     return (
-        <div className="container">
-           <div class="tutor">
+        <>
+           <div className="l-heading uppercase margin-top-bottom-small">Know your teacher  <span role="img" aria-label="">🚀</span></div>
             <article class="tutor">
-            <img 
-            class="tutor__image"
-            src={imageTwo} alt=""/>
-            <div class="tutor__information">
-                <h2 class="tutor__name">{title}</h2>
-                <span role="img" aria-label="">🎀</span>
-            </div>
+              <img className="tutor__image" src={imageTwo} alt=""/>
             </article>
-          </div>    
 
 
          <div class="tags">
@@ -47,7 +40,7 @@ class Tutorial extends Component {
             {tutorials.map((tutorial) => (
                 <article className="tag"
                     onClick={() => { this.onTutorialSelect(tutorial)}}>
-                    <img src="./nature.svg" alt=""/>
+                    <img src={tutorial.icon} alt="🚀"/>
                     <div class="tag__line"> {tutorial.title}</div>
                     </article>
             ))}
@@ -56,18 +49,19 @@ class Tutorial extends Component {
 
        <div class="lecture__container">
         <div class="l-heading uppercase margin-top-bottom-small">Lecture</div>
-        <div class="leture">
-
-       {this.state.selectedTutorial && ( <iframe width="100%" height="315" src={`https://www.youtube.com/embed/${this.state.selectedTutorial.video}`} title={title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)}
+        <div class="lecture">
+       {this.state.selectedTutorial && ( <iframe  src={`https://www.youtube.com/embed/${this.state.selectedTutorial.video}`} title={title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)}
         </div>
        </div>
       <div class="flashcards__container">
         <div class="flashcard__header l-heading uppercase margin-top-bottom-small">
           flashcards
         </div>
-          <div class="flashcards">
-   
-            {/* {this.state.selectedTutorial && this.state.selectedTutorial.title} */}
+
+     
+        <div className="m-heading margin-top-bottom-small uppercase">{this.state.selectedTutorial && this.state.selectedTutorial.title}</div> 
+
+          <div class="flashcards">   
             {this.state.selectedTutorial &&
             this.state.selectedTutorial.flashcards.map((flashcard) => (
               <Flashcard
@@ -78,7 +72,7 @@ class Tutorial extends Component {
 
       </div>        
     </div>
-    </div>
+    </>
 
     )
   }

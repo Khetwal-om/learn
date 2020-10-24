@@ -11,7 +11,7 @@ import Home from './components/Home/Home'
 class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <BrowserRouter>
           <Header/>
           <Switch>
@@ -19,7 +19,7 @@ class App extends Component {
             <Route path="/:instructor" exact component={Tutorials} />
           </Switch>
         </BrowserRouter>
-      </div>
+      </>
     )
   }
 }

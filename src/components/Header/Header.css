@@ -20,8 +20,15 @@ ul {
   justify-content: space-between;
   min-height: 10vh;
   flex: 0.4;
+  padding: 1rem;
 }
-
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+.logo:hover{
+  cursor: pointer;
+}
 .navbar-menu {
   flex: 0.4;
   display: flex;
@@ -30,4 +37,6 @@ ul {
 }
 .navbar-menu > li {
   margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
 }

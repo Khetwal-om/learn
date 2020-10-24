@@ -4,7 +4,7 @@ import './Instructor.css'
 
 function Instructor({ name, imageOne, tutorialNumbers }) {
   return (
-    <div className="container">
+    <>
       <NavLink to={`/${name}/`}> 
       <article class="instructor">
         <img class="instructor__image" src={imageOne} alt=""/>
@@ -14,7 +14,7 @@ function Instructor({ name, imageOne, tutorialNumbers }) {
        </div>
       </article>
       </NavLink>
-    </div>
+    </>
   )
 }
 

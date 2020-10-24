@@ -1,13 +1,13 @@
-import React from 'react'
+// import React from 'react'
 
-import Flashcard from './Flashcard'
+// import Flashcard from './Flashcard'
 
-function Flashcards({ question, meaningOne }) {
-  return (
-    <div className="tutorial">
-      <Flashcard key={question} question={question} answerOne={meaningOne} />
-    </div>
-  )
-}
+// function Flashcards({ question, meaningOne }) {
+//   return (
+//     <div className="tutorial">
+//       <Flashcard key={question} question={question} answerOne={meaningOne} />
+//     </div>
+//   )
+// }
 
-export default Flashcards
+// export default Flashcards
