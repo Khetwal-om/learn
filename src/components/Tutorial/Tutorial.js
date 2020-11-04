@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import { NavLink } from 'react-router-dom'
 import Flashcard from '../Flashcard/Flashcard'
-
+import FlashcardHover from '../FlashcardHover/FlashcardHover'
 
 import './Tutorial.css'
 
@@ -69,9 +69,26 @@ class Tutorial extends Component {
                 meaningOne={flashcard.meaningOne}
               />
             ))}
+         </div>     
 
-      </div>        
-    </div>
+         
+         <div className="margin-top-bottom-small"></div>     
+         <div class="flashcard__header l-heading uppercase margin-top-bottom-small">
+          Hover
+        </div>
+         
+         <div class="flashcards">   
+            {this.state.selectedTutorial &&
+            this.state.selectedTutorial.flashcards.map((flashcard) => (
+              <FlashcardHover
+                question={flashcard.question}
+                meaningOne={flashcard.meaningOne}
+              />
+            ))}
+         </div>
+
+
+        </div>
     </>
 
     )

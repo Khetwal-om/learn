@@ -104,22 +104,31 @@
   
     grid-gap: 2rem;
   }
-  .tag {
-    display: flex;
-    justify-content: space-evenly;
-    background: #e5e5e5;
-    border-radius: 5px;
-    align-items: center;
-    padding: .4rem;
-    font-weight: 700;
-    cursor: pointer;
-    
-  }
   
+  .tag {
+      display: flex;
+      justify-content: space-evenly;
+      background: #e5e5e5;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      font-weight: 700;
+      border: medium none;
+      line-height: 1em;
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 20px;
+      transition: box-shadow 0.3s ease-in-out 0s;
+      text-align: center;
+      cursor: pointer;
+      /* background: rgb(255, 255, 255) none repeat scroll 0% 0%; */
+  
+  }
+  .tag:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px;
+  }
   .tag__line {
     width: 60%;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     color: rgba(25, 32, 45, 0.96);
     text-align: center;
